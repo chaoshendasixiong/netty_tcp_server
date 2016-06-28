@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <File name="ERROR" fileName="logs/error.log">
+            <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="%d{yyyy.MM.dd 'at' HH:mm:ss z} %-5level %class{36} %L %M - %msg%xEx%n"/>
+        </File>
+        <!-- 配置日志输出文件名字     追加读写 -->
+        <File name="A1" fileName="logs/A1.log" append="true">
+            <!-- 输出格式 -->
+            <PatternLayout pattern="%t %-5p %c{2} - %m%n"/>
+        </File>
+        <RollingFile name="threadMonitor" fileName="logs/monitor.log" filePattern="logs/monitor/$${date:yyyy-MM-dd}/%d{yyyy-MM-dd-HH}.log" append="false">
+            <PatternLayout pattern="[%l] [%t] [%-4r] [%d{yyyy-MM-dd HH:mm:ss,SSS}] [%p] \: %m%n"/>
+            <!-- 设置策略 -->
+            <Policies>
+                <!-- A2子文件夹需要创建
+                    基于时间的触发策略。该策略主要是完成周期性的log文件封存工作。有两个参数：
+                    interval，integer型，指定两次封存动作之间的时间间隔。单位:以日志的命名精度来确定单位，
+                        比如yyyy-MM-dd-HH 单位为小时，yyyy-MM-dd-HH-mm 单位为分钟
+                    modulate，boolean型，说明是否对封存时间进行调制。若modulate=true，
+                        则封存时间将以0点为边界进行偏移计算。比如，modulate=true，interval=4hours，
+                        那么假设上次封存日志的时间为03:00，则下次封存日志的时间为04:00，
+                        之后的封存时间依次为08:00，12:00，16:00
+                 -->
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+            </Policies>
+        </RollingFile>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%l] [%t] [%-4r] [%d{yyyy-MM-dd HH:mm:ss,SSS}] [%p] \: %m%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <logger name="threadMonitor" level="debug" additivity="false">
+            <AppenderRef ref="threadMonitor"/>
+        </logger>
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="A1"/>
+            <AppenderRef ref="ERROR" />
+        </Root>
+    </Loggers>
+</Configuration>

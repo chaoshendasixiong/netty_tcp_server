@@ -1,0 +1,13 @@
+main INFO  Main.Main - javaVersion=1.7.0_67
+main INFO  Main.Main - 加载自定义config.properties
+main INFO  Main.Main - config read success!
+main INFO  Main.Main - javaVersion=1.7.0_67
+main INFO  Main.Main - 加载自定义config.properties
+main INFO  Main.Main - config read success!
+main INFO  Main.Main - javaVersion=1.7.0_67
+main INFO  Main.Main - 加载自定义config.properties
+main INFO  Main.Main - config read success!
+nioEventLoopGroup-3-1 INFO  server.WmsHandler - new connection: 127.0.0.1:9716
+nioEventLoopGroup-3-1 INFO  server.WmsHandler - close connection: 127.0.0.1
+nioEventLoopGroup-3-2 INFO  server.WmsHandler - new connection: 127.0.0.1:9717
+nioEventLoopGroup-3-2 INFO  server.WmsHandler - close connection: 127.0.0.1

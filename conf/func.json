@@ -1,0 +1,8 @@
+[
+  {"id":100,"classes":"com.csdsx.func.UserManage","method":"user_reg"},
+  {"id":101,"classes":"com.csdsx.func.UserManage","method":"user_login"},
+  {"id":102,"classes":"com.csdsx.func.UserManage","method":"user_quit"},
+  {"id":103,"classes":"com.csdsx.func.UserManage","method":"user_changepwd"},
+  {"id":300,"classes":"com.csdsx.func.ProductManage","method":"get_fileList"},
+  {"id":400,"classes":"com.csdsx.func.DisplayPart","method":"get_index"}
+]

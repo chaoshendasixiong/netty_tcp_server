@@ -1,0 +1,6 @@
+[com.csdsx.worker.MyMonitorThread.run(MyMonitorThread.java:36)] [pool-2-thread-2] [1438] [2016-06-28 16:24:31,706] [DEBUG] : [monitor] [0/1] Active: 0, Completed: 0, wait: 0, Task: 0, isShutdown: false, isTerminated: false
+[com.csdsx.worker.MyMonitorThread.run(MyMonitorThread.java:36)] [pool-2-thread-2] [4438] [2016-06-28 16:24:34,706] [DEBUG] : [monitor] [0/1] Active: 0, Completed: 0, wait: 0, Task: 0, isShutdown: false, isTerminated: false
+[com.csdsx.worker.MyMonitorThread.run(MyMonitorThread.java:36)] [pool-2-thread-2] [7438] [2016-06-28 16:24:37,706] [DEBUG] : [monitor] [0/1] Active: 0, Completed: 0, wait: 0, Task: 0, isShutdown: false, isTerminated: false
+[com.csdsx.worker.MyMonitorThread.run(MyMonitorThread.java:36)] [pool-2-thread-2] [10438] [2016-06-28 16:24:40,706] [DEBUG] : [monitor] [0/1] Active: 0, Completed: 0, wait: 0, Task: 0, isShutdown: false, isTerminated: false
+[com.csdsx.worker.MyMonitorThread.run(MyMonitorThread.java:36)] [pool-2-thread-2] [13438] [2016-06-28 16:24:43,706] [DEBUG] : [monitor] [0/1] Active: 0, Completed: 0, wait: 0, Task: 0, isShutdown: false, isTerminated: false
+[com.csdsx.worker.MyMonitorThread.run(MyMonitorThread.java:36)] [pool-2-thread-2] [16440] [2016-06-28 16:24:46,708] [DEBUG] : [monitor] [0/1] Active: 0, Completed: 0, wait: 0, Task: 0, isShutdown: false, isTerminated: false
